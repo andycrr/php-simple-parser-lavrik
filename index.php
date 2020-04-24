@@ -4,8 +4,6 @@ include_once __DIR__ .'/lib/curl_query.php';
 include_once __DIR__ .'/lib/curl.php';
 include_once __DIR__ .'/lib/simple_html_dom.php';
 
-//$html = file_get_contents('https://ntschool.ru/kursyi');
-
 $html = curl_get('https://ntschool.ru/kursyi');
 $dom = str_get_html($html);
 
